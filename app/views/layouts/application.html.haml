@@ -7,12 +7,11 @@
 		= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
 		= javascript_include_tag "vendor/modernizr"
 		= javascript_include_tag "application", "data-turbolinks-track" => true
-		= javascript_include_tag controller.controller_name  if Rails.application.assets.find_asset "#{controller.controller_name}.js"
 		= csrf_meta_tags
 		%link{:rel => "shortcut icon", :href => "#{asset_path 'favicon.png'}"}
 		%link{:rel => "icon", :href => "#{asset_path 'favicon.png'}"}
 	%body
-		.row.small-collapse
+		.fullwidth.row.small-collapse
 			.columns.small-12
 				.off-canvas-wrap{:data => {:offcanvas => ""}}
 					.inner-wrap
